@@ -1,0 +1,11 @@
+
+$red:red;
+$yellow:yellow;
+
+.test{
+    background-color:$red;
+    span{
+        background-color: aqua;
+    }
+    
+}
