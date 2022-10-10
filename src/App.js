@@ -3,6 +3,8 @@ import Button from './components/Button'
 import Tabs from './components/Tabs'
 import { Tab } from 'bootstrap'
 import { useState } from 'react'
+import Test from './components/lifecycle/Test'
+
 
 function App() {
   
@@ -15,6 +17,7 @@ alert('başardın!!')
 
   //button componenti
   const[activeTab,setActiveTab] = useState(1)
+  const[show,setShow]=useState(false)
 
   return (
    <>
@@ -52,7 +55,12 @@ alert('başardın!!')
   <Tab.Panel title="Ayarlar">3.panel Lorem ipsum dolor sit amet, </Tab.Panel>
  </Tabs>
    </div>
- 
+ <div style={{padding:'20px'}}>
+ <div  style={{fontSize:'20px',fontWeight:'bold',fontFamily:'sans-serif'}}>LifeCycle Example </div> 
+  <button style={{border:'1px solid grey',borderRadius:'4px',width:'80px',backgroundColor:'lightgrey'}} onClick={()=>setShow(show=>!show)}>{show ? 'Gizle' : 'Göster'}</button>
+{show && <Test />}
+</div>
+
    
    </>
     
