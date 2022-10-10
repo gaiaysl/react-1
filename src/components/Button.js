@@ -2,7 +2,7 @@
 import classNames from "classnames"
 
 export default function Button({children,variant='default'}){
-   console.log(children)
+  
     return(
         <>
        <button className={classNames({

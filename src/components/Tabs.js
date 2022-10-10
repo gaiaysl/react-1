@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
   
     const[active,setActive] = useState(activeTab) 
 
-    useEffect(()=>{
+    useEffect(() => {
         setActive(activeTab)
 
     },[activeTab])
