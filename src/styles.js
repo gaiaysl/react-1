@@ -20,7 +20,7 @@ export default function styles(){
       </p>
       
       <Test />
-      <span className='test'>test</span>
+      
      {process.env.NODE_ENV ==='production' &&(
       <img src="/logo512.png" />
      )}
