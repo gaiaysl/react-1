@@ -4,6 +4,8 @@ import Tabs from './components/Tabs'
 import { Tab } from 'bootstrap'
 import { useState } from 'react'
 import Test from './components/lifecycle/Test'
+import UseRef from './components/UseRef'
+import UseReducer from './components/UseReducer'
 
 
 function App() {
@@ -61,6 +63,8 @@ alert('başardın!!')
 {show && <Test />}
 </div>
 
+<UseRef />
+<UseReducer/>
    
    </>
     
