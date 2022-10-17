@@ -1,5 +1,5 @@
 
-import {forwardRef, useRef} from 'react'
+import { useRef} from 'react'
 export default function UseRef(){
 
     //const Input = forwardRef((props,ref) =>{

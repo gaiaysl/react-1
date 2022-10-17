@@ -2,13 +2,14 @@ import './Tailwind.css'
 import Button from './components/Button'
 import Tabs from './components/Tabs'
 import { Tab } from 'bootstrap'
-import { useState } from 'react'
+import { useState,useReducer } from 'react'
 import Test from './components/lifecycle/Test'
 import UseRef from './components/UseRef'
-import UseReducer from './components/UseReducer'
+import TodoReducer from './components/TodoReducer'
 
 
 function App() {
+ 
   
   const todo = ['todo1','todo2','todo3']
 
@@ -64,7 +65,7 @@ alert('başardın!!')
 </div>
 
 <UseRef />
-<UseReducer/>
+<TodoReducer/>
    
    </>
     
