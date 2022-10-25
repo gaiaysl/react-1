@@ -6,6 +6,7 @@ import { useState,useReducer } from 'react'
 import Test from './components/lifecycle/Test'
 import UseRef from './components/UseRef'
 import TodoReducer from './components/TodoReducer'
+import FormElements from './components/FormElements'
 
 
 function App() {
@@ -66,6 +67,7 @@ alert('başardın!!')
 
 <UseRef />
 <TodoReducer/>
+<FormElements/>
    
    </>
     
